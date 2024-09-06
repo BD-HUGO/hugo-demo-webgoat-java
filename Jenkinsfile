@@ -20,7 +20,7 @@ pipeline {
 
         stage('Cov-Build') {
             steps {
-                sh 'synopsys_scan coverity_args: '--enable-audit-mode --webapp-security --aggressiveness-level high -j auto', coverity_build_command: 'cov-build --dir idir mvn clean compile', coverity_config_path: 'C:\Program Files\Coverity\Coverity Static Analysis\config\template-java-config-0\coverity_config.xml', coverity_local: true, coverity_prComment_enabled: true, coverity_project_name: 'e jenkins-ci-demo-java', coverity_stream_name: 'e jenkins-ci-demo-java-1', mark_build_status: 'UNSTABLE', product: 'coverity''
+                sh 'synopsys_scan coverity_args: '--enable-audit-mode --webapp-security --aggressiveness-level high -j auto', coverity_build_command: 'cov-build --dir idir mvn clean compile', coverity_config_path: 'C:/Program Files/Coverity/Coverity Static Analysis/config/template-java-config-0/coverity_config.xml', coverity_local: true, coverity_prComment_enabled: true, coverity_project_name: 'e jenkins-ci-demo-java', coverity_stream_name: 'e jenkins-ci-demo-java-1', mark_build_status: 'UNSTABLE', product: 'coverity''
             }
         }
 
