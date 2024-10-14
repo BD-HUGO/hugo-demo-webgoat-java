@@ -23,4 +23,4 @@ jobs:
           github_token: ${{ secrets.GH_TOKEN }}
 
           polaris_application_name: "hugo-demo"
-          polaris_project_name: "hugo-demo-webgoat"
+          polaris_project_name: "WebGoat"
